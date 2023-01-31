@@ -1,0 +1,170 @@
+* {
+    font-family: sans-serif;
+    color: #FAF9F8;
+    background-color: #100603;
+}
+
+body {
+    background-color: #100603;
+    margin: 0px;
+}
+
+#title {
+    color: #FAF9F8;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 1.5rem;
+    margin: 0px;
+    margin-top: 30px;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    padding: 0px;
+    height: 43rem;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-right: 1rem;
+}
+.center > p {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.right {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.5;
+    padding: 1rem;
+    width: 90rem;
+}
+
+.right > div {
+    margin: 3rem 0rem;
+}
+
+input {
+    font-size: 15px;
+    background-color: #FAF9F8;
+    color: black;
+    border: 0px;
+    border-radius: 10px;
+    padding: 0.4rem;
+}
+
+input:focus {
+    background-color: black;
+    color: #FAF9F8;
+    font-weight: 100;
+    border: 2px solid #FAF9F8;
+    outline: none;
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+
+.right * {
+    display: flex;
+}
+
+.form {
+    flex-direction: column;
+}
+
+.court input {
+    width: 18rem;
+}
+
+.names {
+    justify-content: space-between;
+}
+
+
+.long input {
+    flex-grow: 1;
+}
+
+.address {
+    flex-direction: column;
+}
+
+.address .street {
+    margin: 0rem 0rem 0.5rem;
+}
+
+.country {
+    justify-content: space-between;
+}
+
+.physical {
+    justify-content: space-between;
+}
+
+.physical input {
+    width: 10rem;
+}
+
+.agree {
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.agree > div {
+    margin: 0.5rem 3rem;
+}
+
+.agree input {
+    margin-left: 2rem;
+    color: #FAF9F8;
+}
+
+.signature {
+    margin: 0rem;
+}
+
+button {
+    border: 2px solid #FAF9F8;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 100; 
+    padding: 0.5rem 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 1px;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border: 2px solid #FAF9F8;
+    border-radius: 8px;
+    padding: 5rem 10rem;
+    z-index: 9;
+}
+
+.signature {
+    font-size: 10px;
+    font-weight: 100;
+}

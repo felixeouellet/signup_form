@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrestrial Space Agency</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <h1 id="title">TERRESTRIAL SPACE AGENCY</h1>
+
+    <main id="main">
+        <img src="earth.png" alt="description" id="earth" class="left"/>
+
+        <div class="center">
+        <p>Your help is needed across the universe to expand humanity's influence. Enroll now to be part of the greatest force known to mankind!</p>
+        <p>Come join the greatest power and explore the galaxy </p>
+        </div>
+
+        <div class="right">
+            <div class="names">
+                <div class="form court">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname">
+                </div>
+
+                <div class="form court">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname">
+                </div>
+            </div>
+
+            <div class="emailaddress long form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="address">
+                <div class="street long form">
+                    <label for="street">Address</label>
+                    <input type="text" id="street">
+                </div>
+
+                <div class="country">
+                    <div class="city form court">
+                        <label for="city">City</label>
+                        <input type="text" id="city">
+                    </div>
+
+                    <div class="zipcode form court">
+                        <label for="zipcode">Zip Code</label>
+                        <input type="text" id="zipcode">
+                    </div>
+                </div>
+            </div>
+
+            <div class="physical">
+                <div class="age form">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" min="18" max="65">
+                </div>
+
+                <div class="height form">
+                    <label for="height">Height</label>
+                    <input type="number" id="height">
+                </div>
+
+                <div class="weight form">
+                    <label for="weight">Weight</label>
+                    <input type="number" id="weight">
+                </div>
+            </div>
+
+            <div class="agree">
+                <div class="medical">
+                    <label for="medical" >By checking this box, you agree to be in perfect health to your knowledge and to submit yourself to any medical exam prescribed by the TSA. You also concent to receive any procedure deemed necessary to improve your general health by our medical staff.</label>
+                    <input type="checkbox" id="medical">
+                    <div class="container"></div>
+                    <span class="checkmark"></span>
+                </div>
+
+                <div class="agreement">
+                    <label for="agreement">By checking this box, you acknowledge that you have read and agree to all of our terms. You agree to give us full access to all of your personal records and grant us free use of it all.</label>
+                    <input type="checkbox" id="agreement">
+                    <div class="container"></div>
+                    <span class="checkmark"></span>
+                </div>
+            </div>
+
+            <button type="submit" onclick="openForm()">Submit</button>
+
+            <div class="form-popup" id="myForm">
+                Thank you for your interest! You will be contacted shortly.
+            </div>
+        </div>
+    </main>
+    
+    <a href="https://github.com/felixeouellet" class="signature">Félixe Ouellet</a>
+
+</body>
+</html>
